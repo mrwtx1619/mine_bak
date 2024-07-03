@@ -1,0 +1,5 @@
+python消费kafka,如果想指定从头消费，可以增加参数auto_offset_reset="earliest"
+
+consumer= KafkaConsumer("topic_name",bootstrap_servers="76.169.53.160",auto_off_set="earliest")
+for m in consumer:
+    print(m)
